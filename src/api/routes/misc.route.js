@@ -2,8 +2,12 @@ const express = require('express')
 const controller = require('../controllers/misc.controller')
 const keyVerify = require('../middlewares/keyCheck')
 const loginVerify = require('../middlewares/loginCheck')
-
+const { protectRoutes } = require('../../config/config');
+const tokenCheck = require('../middlewares/tokenCheck');
 const router = express.Router()
+if (protectRoutes) {
+  router.use(tokenCheck);
+}
 
 router.route('/onwhatsapp').post(keyVerify, loginVerify, controller.onWhatsapp)
 router.route('/downProfile').post(keyVerify, loginVerify, controller.downProfile)

@@ -4,9 +4,16 @@ const keyVerify = require('../middlewares/keyCheck')
 const loginVerify = require('../middlewares/loginCheck')
 const multer = require('multer')
 
+
 const router = express.Router()
 const storage = multer.memoryStorage()
 const upload = multer({ storage: storage, inMemory: true }).single('file')
+const { protectRoutes } = require('../../config/config');
+const tokenCheck = require('../middlewares/tokenCheck');
+
+if (protectRoutes) {
+  router.use(tokenCheck);
+}
 
 router.route('/text').post(keyVerify, loginVerify, controller.Text)
 router.route('/image').post(keyVerify, loginVerify, upload, controller.Image)

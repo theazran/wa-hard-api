@@ -1,6 +1,7 @@
 // Port number
 const PORT = process.env.PORT || '3333'
 const TOKEN = process.env.TOKEN || ''
+const ADMINTOKEN = process.env.ADMINTOKEN || ''
 const PROTECT_ROUTES = !!(
     process.env.PROTECT_ROUTES && process.env.PROTECT_ROUTES === 'true'
 )
@@ -52,6 +53,7 @@ const MARK_MESSAGES_READ = !!(
 module.exports = {
     port: PORT,
     token: TOKEN,
+	adminToken: ADMINTOKEN,	
     restoreSessionsOnStartup: RESTORE_SESSIONS_ON_START_UP,
     appUrl: APP_URL,
     log: {

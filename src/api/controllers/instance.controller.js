@@ -18,8 +18,18 @@ exports.init = async (req, res) => {
     const filePath = path.join('db/sessions.json');
 
     const data = await fs.readFile(filePath, 'utf-8');
-    const sessions = JSON.parse(data);
+const sessions = JSON.parse(data);
+const sessionCount = sessions.length;
 
+if (process.env.MAX_INSTANCES) {
+  const maxInstances = parseInt(process.env.MAX_INSTANCES, 10);
+  if (maxInstances <= sessionCount) {
+    return res.json({
+      error: true,
+      message: 'Limite de sessions criadas já foi atingido'
+    });
+  }
+}
     const valida = sessions.find(session => session.key === key);
 
     if (valida) {

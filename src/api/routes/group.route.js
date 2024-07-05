@@ -2,8 +2,14 @@ const express = require('express')
 const controller = require('../controllers/group.controller')
 const keyVerify = require('../middlewares/keyCheck')
 const loginVerify = require('../middlewares/loginCheck')
-
+const { protectRoutes } = require('../../config/config');
+const tokenCheck = require('../middlewares/tokenCheck');
 const router = express.Router()
+if (protectRoutes) {
+  router.use(tokenCheck);
+}
+
+
 
 router.route('/create').post(keyVerify, loginVerify, controller.create)
 router.route('/listall').post(keyVerify, loginVerify, controller.listAll)

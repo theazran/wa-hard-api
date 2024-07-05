@@ -121,7 +121,7 @@ socketConfig = {
 
     // markOnlineOnConnect: false
     msgRetryCounterCache: cache,
-	forceGroupsPrekeys : false,
+	forceGroupsPrekeys : true,
     getMessage: (key) => {
         return (dados.loadMessage(key.remoteJid, key.id))?.message || undefined;
     },
@@ -535,6 +535,7 @@ async init() {
         this.instance.webhook = existingSession.webhook;
         this.instance.webhook_url = existingSession.webhookUrl;
         this.instance.webhook_events = existingSession.webhookEvents;
+		this.instance.base64 = existingSession.base64;
     } else {
         b = {
             browser: {
@@ -548,6 +549,7 @@ async init() {
         this.instance.webhook = false;
         this.instance.webhook_url = false;
         this.instance.webhook_events = false;
+		this.instance.base64 = false;
     }
 
     this.socketConfig.auth = this.authState.state;
@@ -703,14 +705,25 @@ sock?.ev.on('presence.update', async (json) => {
             if (!msg.message) return;
 
             if (this.instance.mark === true) {
+				try
+					{
 
                 await this.lerMensagem(msg.key.id, msg.key.remoteJid);
+					}
+	                catch(e)
+	               {
+	                 //console.log(e)
+                   }
             }
 
             const messageType = Object.keys(msg.message)[0];
             if (['protocolMessage', 'senderKeyDistributionMessage'].includes(messageType))
                 return;
-
+	
+	
+			if (this.instance.webhook === true) {
+	        try{
+           	
             const webhookData = {
                 key: this.key,
                 ...msg,
@@ -719,8 +732,10 @@ sock?.ev.on('presence.update', async (json) => {
             if (messageType === 'conversation') {
                 webhookData['text'] = m;
             }
-
-            if (this.instance.webhook === true) {
+		
+			if (this.instance.base64 === true) {
+  
+            
                 switch (messageType) {
                     case 'imageMessage':
                         webhookData['msgContent'] = await downloadMessage(
@@ -729,25 +744,46 @@ sock?.ev.on('presence.update', async (json) => {
                         );
                         break;
                     case 'videoMessage':
-                        const arquivo_video = await downloadMessage(
+                        webhookData['msgContent'] = await downloadMessage(
                             msg.message.videoMessage,
                             'video'
                         );
 
-                        webhookData['msgContent'] = await fs.readFile(arquivo_video, {
-                            encoding: 'base64',
-                        });
+                        //webhookData['msgContent'] = await fs.readFile(arquivo_video, {
+                            //encoding: 'base64',
+                        //});
 
-                        webhookData['thumb'] = await this.thumbBase64(arquivo_video);
+                        //webhookData['thumb'] = await this.thumbBase64(arquivo_video);
 
                         break;
 			case 'audioMessage':
-                        const arquivo_audio = await downloadMessage(
+						
+						if (process.env.DEFAULT_AUDIO_OUTPUT && process.env.DEFAULT_AUDIO_OUTPUT === 'MP3')
+							{
+								
+			
+								
+		
+				const arquivo_audio = await downloadMessage(msg.message.audioMessage,'audio');				
+			const buffer = Buffer.from(arquivo_audio, 'base64');
+			const name = 'temp/'+uuidv4()+'.ogg';
+	 		await fs.writeFile(name, buffer);
+		
+
+								
+                        
+			const convert = await this.mp3(name);
+						
+                        webhookData['msgContent'] = convert;
+							}
+						else
+							{
+							webhookData['msgContent'] = await downloadMessage(
                             msg.message.audioMessage,
                             'audio'
                         );
-			const convert = await this.mp3(arquivo_audio);
-                        webhookData['msgContent'] = convert;
+								
+							}
                         break;
                     case 'documentMessage':
                         webhookData['msgContent'] = await downloadMessage(
@@ -759,11 +795,21 @@ sock?.ev.on('presence.update', async (json) => {
                         webhookData['msgContent'] = '';
                         break;
                 }
+				
+			}
+
+				await this.SendWebhook('message', 'messages.upsert', webhookData, this.key);
             }
+			catch(e)
+			{
+		          console.log('Error webhook send');
+			}
+}
 
-//console.log(webhookData);
 
-            await this.SendWebhook('message', 'messages.upsert', webhookData, this.key);
+
+
+ 
         });
     });
 

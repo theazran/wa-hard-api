@@ -4,6 +4,12 @@ exports.Text = async (req, res) => {
     )
     return res.status(201).json({ error: false, data: data })
 }
+exports.TextManager = async (instanceKey, message) => {
+    const data = await WhatsAppInstances[instanceKey].sendTextMessage(
+        message
+    )
+    return { error: false, data: data }
+}
 
 exports.Image = async (req, res) => {
     const data = await WhatsAppInstances[req.query.key].sendMediaFile(

@@ -6,7 +6,8 @@ exports.onWhatsapp = async (req, res) => {
 
 exports.downProfile = async (req, res) => {
     const data = await WhatsAppInstances[req.query.key]?.DownloadProfile(
-        req.body.id
+        req.body.id,
+		req?.body?.group 
     )
     return res.status(201).json({ error: false, data: data })
 }
@@ -18,6 +19,7 @@ exports.getStatus = async (req, res) => {
     return res.status(201).json({ error: false, data: data })
 }
 exports.contacts = async (req, res) => {
+	
     const data = await WhatsAppInstances[req.query.key]?.contacts(
         req.query.key
     )

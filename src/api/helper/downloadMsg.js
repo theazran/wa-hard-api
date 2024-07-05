@@ -12,19 +12,7 @@ module.exports = async function downloadMessage(msg, msgType) {
     } catch {
         return console.log('error downloading file-message')
     }
-	if(msgType==='video')
-		{
-			const name = 'temp/'+uuidv4()+'.mp4';
-	 await fs.writeFile(name, buffer);
-			return name;
-		}
-	if(msgType ==='audio')
-		{
-			const name = 'temp/'+uuidv4()+'.ogg';
-	 await fs.writeFile(name, buffer);
-			return name;
-		}
-	else{
+	
     return buffer.toString('base64')
 	}
-}
+
