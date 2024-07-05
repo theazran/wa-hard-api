@@ -192,7 +192,7 @@ A api é multidevices e aceita vários números conectados<br>
 O consumo médio de memória varia de quantidade de instâncias.<br>
 Formato padrão dos arquivos de áudio e vídeo aceito pela Baileys sem passar por conversão: mp4 e ogg.<br>
 Caso envie arquivos fora desses formatos a api vai converter automaticamente e pode consumir recursos da máquina e o prazo de envio é relativamente maior.<br>
-Formato padrão de saída de audio:<b>MP3</b><br>
+Formato padrão de saída de audio:<b>OGG ou MP3</b><br>
 Formato padrão de saída de video:<b>MP4</b>
  
 
