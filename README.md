@@ -94,7 +94,7 @@ group-participants.update<br>
 Documentação:<br>
 
 <ul dir="auto">
-<li><a target="_blank" href="https://api.postman.com/collections/26659340-3267c07d-49b4-432b-96d9-8a4cc94b3848?access_key=PMAT-01HHZBJN72MNQ4Z7J48CEFBCNP">Json Postman</a></li>
+<li><a target="_blank" href="https://app.getpostman.com/run-collection/26659340-c4bcdbc8-d77c-4b2a-b35a-9013cff8dce6?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D26659340-c4bcdbc8-d77c-4b2a-b35a-9013cff8dce6%26entityType%3Dcollection%26workspaceId%3D3073d90e-cfad-4f45-9c7f-cbb76f21199d">Json Postman Fork</a></li>
 <li><a target="_blank" href="https://www.postman.com/bold-spaceship-404300/workspace/whatsapp-hard-api-nodejs/collection/26659340-3267c07d-49b4-432b-96d9-8a4cc94b3848?action=share&creator=26659340">Postman Online</a></li>
 </ul>
 
