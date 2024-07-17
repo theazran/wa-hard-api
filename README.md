@@ -1,5 +1,6 @@
-<h2 tabindex="-1" dir="auto" data-react-autofocus="true"><a id="user-content-whatsapp-api-nodejs" class="anchor" aria-hidden="true" tabindex="-1" href="#whatsapp-api-nodejs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>WhatsApp-hard- Api -NodeJs MultiDevice</h2>
+<h2 tabindex="-1" dir="auto" data-react-autofocus="true"><a id="user-content-whatsapp-api-nodejs" class="anchor" aria-hidden="true" tabindex="-1" href="#whatsapp-api-nodejs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>WhatsApp-hard - Api -NodeJs MultiDevice</h2>
 <p dir="auto">Esta api é uma implementação do <a href="https://github.com/WhiskeySockets/Baileys">WhiskeySockets Baileys</a>, como um serviço RestFull Api, que controla funções do WhatsApp.<br>
+Este código tem como base principal o projeto <a href="https://github.com/salman0ansari/whatsapp-api-nodejs">Whatsapp-api-nodejs</a> que foi atualizado e melhorado com o tempo.	
 Com este código, você pode criar chats de multiserviço, bots de serviço ou qualquer outro sistema que utilize o WhatsApp. Com este código, você não precisa conhecer JavaScript para Node.js, basta iniciar o servidor e fazer as solicitações na linguagem com a qual você se sentir mais confortável.</p>
 
 <h2 tabindex="-1" dir="auto"><a id="user-content-infrastructure" class="anchor" aria-hidden="true" tabindex="-1" href="#infrastructure"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Intalação:</h2>
@@ -28,8 +29,8 @@ Comando para clonar este reposítorio:
   <ul dir="auto">
 <li>Instalação de dependências</li>
 </ul>
-<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>npm i or npm i --force</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="npm i" tabindex="0" role="button">
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>npm i </pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="npm i or npm i --force" tabindex="0" role="button">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
 </svg>
@@ -75,8 +76,14 @@ docker build -t hard-api-whatsapp . <br>
 
 </ul>
 
+<h2 tabindex="-1" dir="auto" data-react-autofocus="true"><a id="user-content-whatsapp-api-nodejs" class="anchor" aria-hidden="true" tabindex="-1" href="#whatsapp-api-nodejs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Manager da API</h2>
+<p>Contribua com o projeto e tenha acesso ao manager da api</p>
+<br>
 
-Mapa de eventos para receber no webhook:<br>
+![link About do site](https://github.com/renatoiub/whatsapp-hard-api-node/blob/v1.6.0/src/public/img/manager.jpg)
+
+
+<h2 tabindex="-1" dir="auto" data-react-autofocus="true"><a id="user-content-whatsapp-api-nodejs" class="anchor" aria-hidden="true" tabindex="-1" href="#whatsapp-api-nodejs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Eventos do WEbhook:</h2>
 
 connection.update <br>
 qrCode.update<br>
@@ -91,16 +98,16 @@ groups.upsert<br>
 groups.update<br>
 group-participants.update<br>
 
-Documentação:<br>
+<h2 tabindex="-1" dir="auto" data-react-autofocus="true"><a id="user-content-whatsapp-api-nodejs" class="anchor" aria-hidden="true" tabindex="-1" href="#whatsapp-api-nodejs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Documentação:</h2>
 
 <ul dir="auto">
-<li><a target="_blank" href="https://app.getpostman.com/run-collection/26659340-c4bcdbc8-d77c-4b2a-b35a-9013cff8dce6?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D26659340-c4bcdbc8-d77c-4b2a-b35a-9013cff8dce6%26entityType%3Dcollection%26workspaceId%3D3073d90e-cfad-4f45-9c7f-cbb76f21199d">Json Postman Fork</a></li>
+<li><a target="_blank" href="https://api.postman.com/collections/26659340-3267c07d-49b4-432b-96d9-8a4cc94b3848?access_key=PMAT-01HHZBJN72MNQ4Z7J48CEFBCNP">Json Postman</a></li>
 <li><a target="_blank" href="https://www.postman.com/bold-spaceship-404300/workspace/whatsapp-hard-api-nodejs/collection/26659340-3267c07d-49b4-432b-96d9-8a4cc94b3848?action=share&creator=26659340">Postman Online</a></li>
 </ul>
 
 <br>
 <br>
-<h3>Envio</h3>
+<h2 tabindex="-1" dir="auto" data-react-autofocus="true"><a id="user-content-whatsapp-api-nodejs" class="anchor" aria-hidden="true" tabindex="-1" href="#whatsapp-api-nodejs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Envios e Recursos:</h2>
 <table>
 <thead>
 <tr>
@@ -186,17 +193,10 @@ Documentação:<br>
 </tbody>
 </table>
 
-<br><br> Informações adicionais:<br>
+<h2 tabindex="-1" dir="auto" data-react-autofocus="true"><a id="user-content-whatsapp-api-nodejs" class="anchor" aria-hidden="true" tabindex="-1" href="#whatsapp-api-nodejs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Informações adicionais:</h2>
 A api não usa nenhum banco de dados.<br>
 A api é multidevices e aceita vários números conectados<br>
-O consumo médio de memória varia de quantidade de instâncias.<br>
-Formato padrão dos arquivos de áudio e vídeo aceito pela Baileys sem passar por conversão: mp4 e ogg.<br>
-Caso envie arquivos fora desses formatos a api vai converter automaticamente e pode consumir recursos da máquina e o prazo de envio é relativamente maior.<br>
-Formato padrão de saída de audio:<b>OGG ou MP3</b><br>
-Formato padrão de saída de video:<b>MP4</b>
- 
-
-
+O consumo médio de memória varia de quantidade de instâncias e é extremamente leve<br>
 
 
 <br><br>
